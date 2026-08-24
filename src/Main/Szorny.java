@@ -16,11 +16,10 @@ public class Szorny {
     private int sebzes;
 
     public Szorny(Tipusok tipus, String nev, int elet,int sebzes) {
-        if(nev.length() < 3){ nev = Nincs_nev; }
-        this.nev = nev;
+        setNev(nev);
         this.tipus = tipus;
-        this.elet = elet < 0 ? Nincs_elet : elet;
-        this.sebzes = sebzes < 1 ? Nincs_sebzes : sebzes;
+        setElet(elet);
+        setSebzes(sebzes);
         
     }
 
@@ -42,6 +41,15 @@ public class Szorny {
 
     public int getElet() {
         return elet;
+    }
+    public void setElet(int elet) {
+        this.elet = elet < 0 ? Nincs_elet : elet;
+    }
+    public void setSebzes(int sebzes) {
+        this.sebzes = sebzes < 1 ? Nincs_sebzes : sebzes;
+    }
+    public void setNev(String nev) {
+        this.nev = (nev == null || nev.length() < 3) ? Nincs_nev : nev;
     }
     
     public boolean ErosebbMint(Szorny masik){
