@@ -1,5 +1,5 @@
 nev;kor;fizetes
 Kovacs Janos;28;450000
-Nagy Anna;34;520000
+Nagy Anna;34a;520000
 Toth Bela;22;380000
 Szabo Eva;41;610000
