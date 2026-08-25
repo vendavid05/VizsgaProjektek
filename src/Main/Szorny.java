@@ -49,7 +49,7 @@ public class Szorny {
         this.sebzes = sebzes < 1 ? Nincs_sebzes : sebzes;
     }
     public void setNev(String nev) {
-        this.nev = (nev == null || nev.length() < 3) ? Nincs_nev : nev;
+        this.nev = (nev.length() < 3) ? Nincs_nev : nev;
     }
     
     public boolean ErosebbMint(Szorny masik){
